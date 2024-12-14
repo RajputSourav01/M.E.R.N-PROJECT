@@ -1,0 +1,46 @@
+<% layout("/layouts/boilerplate") %>
+
+    <div class="row mt-3 mb-3">
+        <h1 class="col-6 offset-3 signup ">SignUp With WonderLust</h1>
+        <div class="col-6 offset-3">
+            <form method="post" action="/signup" novalidate class="needs-validation">
+                <div class="mb-3">
+                    <label for="Username" class="form-label mt-3">Enter Your Username</label>
+                    <input type="text" class="form-control" id="Username" placeholder="enter unique username"
+                        name="username" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        please add username. required!
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label mt-3">Enter Your Email I'D</label>
+                    <input type="email" class="form-control" id="email" placeholder="enter email Id"
+                        name="email" required>
+                    <div class="invalid-feedback">
+                        please add a valid email I'D !
+                    </div>
+                    <div class="valid-feedback">
+                        make sure you have registered a valid email !
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label mt-3">Enter Your Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="enter a strong password"
+                        name="password" required>
+                    <div class="invalid-feedback">
+                        please add strong password !
+                    </div>
+                    <div class="valid-feedback">
+                        please include special character with your password to make it more secure!
+                    </div>
+                </div>
+                <div class="button">
+                    <button class="btn btn-success" type="submit">SignUp</button>
+                  </div>
+
+            </form>
+        </div>
+    </div>

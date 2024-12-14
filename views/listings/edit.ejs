@@ -1,0 +1,51 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+    <!-- <h1>edit here</h1><br><br><br>
+    <form method="post" action="/listings/<%= listing._id %>?_method=PUT" >
+        <input name="listing[title]" value="<%= listing.title %>"><br><br>
+        <textarea name="listing[description]"><%= listing.description %> </textarea><br><br>
+        <input name="listing[image]" value="<%= listing.image %>"><br><br>
+        <input name="listing[price]" value="<%= listing.price %>"><br><br>
+        <input name="listing[location]" value="<%= listing.location %>"><br><br>
+        <input name="listing[country]" value="<%= listing.country %>"><br><br>
+        <br>
+        
+        <button type="submit">edit</button>
+    </form> -->
+    <div class="row col-6 offset-3">
+<form class="mt-5" method="post" action="/listings/<%= listing._id %>?_method=PUT " enctype="multipart/form-data" >
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Enter Title</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" value="<%= listing.title %>" name="listing[title]">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Add description</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"  name="listing[description]"> <%= listing.description %> </textarea>
+      </div>
+      <div class="mb-3">
+        orignal image <br>
+        <img src=" <%= orignalImage  %> " alt="" height="100px" >
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput2" class="form-label">Upload New Image</label>
+        <input type="file" class="form-control" id="exampleFormControlInput2"  name="listing[image]">
+      </div>
+      <div class="mb-3">
+        <label  class="form-label">Enter Price</label>
+        <input type="number" class="form-control"  value="<%= listing.price %>" name="listing[price]">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput4" class="form-label">Add Location</label>
+        <input type="text" class="form-control" id="exampleFormControlInput4" value="<%= listing.location %>" name="listing[location]">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput5" class="form-label">Enter Countery</label>
+        <input type="text" class="form-control" id="exampleFormControlInput5" value="<%= listing.country %>" name="listing[country]">
+      </div>
+      <div class="button">
+        <button class="btn btn-success" type="submit">Edit'&'Post</button>
+      </div>
+      </form>
+      </div>
+    
+</body>

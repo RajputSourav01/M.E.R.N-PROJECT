@@ -1,0 +1,123 @@
+/* body{
+    background-color: pink;
+} */
+
+/* navbar */
+.head-nav{
+    height: 5rem;
+    background-color: aliceblue;
+}
+.fa-compass{
+    color: rgb(228, 66, 66);
+    font-size: 2rem;
+}
+.nav-link{
+    color: #222222 !important;
+}
+.dropdown{
+    width: 15%;
+}
+
+/* footer */
+.term-condition a{
+    text-decoration: none;
+    color: #222222;
+}
+.term-condition a:hover{
+    text-decoration: underline;
+}
+.footer-info{
+    background-color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-evenly;
+    height: 8rem;
+    justify-content: center;
+    text-align: center;
+}
+.social-media{
+    width: 100%;
+    font-size: 1.5rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.social-media i{
+    margin-left: 1rem;
+}
+.term-condition{
+    width: 100%;
+}
+.company-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* cards */
+.my-card{
+    border: none !important;
+    margin-bottom: 2rem;
+}
+.card-img{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    height: 20rem;
+}
+.card-body{
+    padding: 0 !important;
+}
+.card-text{
+    font-weight: 400;
+}
+.row a{
+    width: auto;
+    margin: auto;
+    padding: 0;
+    text-decoration: none;
+}
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+opacity: 0.5;
+}
+
+
+/* show cards */
+.heading{
+    margin-top: 2rem;
+}
+
+.card img{
+    height: 30vh;
+}
+.btn{
+    display: flex !important;
+    flex-wrap: wrap !important;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+}
+.editbtn{
+    margin-left: 2rem !important;
+}
+/* review */
+
+.review{
+    text-align: center;
+}
+/* signup css */
+.signup{
+    margin-bottom: 3rem;
+}
+
+/* MAPBOX GOOGLE MAP */
+#map { 
+    height: 300PX;
+    width: 80vh;
+}
+.navbar-serch{
+    margin-top: 3rem;
+}

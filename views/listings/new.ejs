@@ -1,0 +1,60 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+    <h2 class="row col-6 offset-3 signup">fill the required details</h2>
+    <!-- <form method="post" action="/listings">
+        <input type="text" name="listing[title]" placeholder="enter title" /><br>
+        <textarea type="text" name="listing[description]" placeholder="enter description" ></textarea><br>
+            <input type="text" name="listing[image]" placeholder="enter image url"/><br>
+            <input type="number" name="listing[price]" placeholder="enter price"/><br>
+            <input type="text" name="listing[location]" placeholder="enter location"/><br>
+            <input type="text" name="listing[country]" placeholder="enter country"/><br><br>
+            <button type="submit">submit</button>
+
+        </form> -->
+<div class="row col-6 offset-3">
+        <form method="post" action="/listings" novalidate class="needs-validation" enctype="multipart/form-data" >
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Enter Title</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="enter cachy title" name="listing[title]" required >
+                <div class="valid-feedback">
+                    Title Looks good!
+                  </div>
+              </div>
+              
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Add description</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"  name="listing[description]" required ></textarea>
+                <div class="invalid-feedback">
+                    please enter a short description!
+                  </div>
+              </div>
+              
+              <div class="mb-3">
+                <label for="exampleFormControlInput3" class="form-label">Enter Image URL</label>
+                <input type="file" class="form-control" id="exampleFormControlInput3" placeholder="enter url here" name="listing[image]" required >
+              </div>
+              
+              <div class="mb-3">
+                <label  class="form-label">Enter Price</label>
+                <input  class="form-control"  placeholder="enter price in rupees" name="listing[price]" required >
+                <div class="invalid-feedback">
+                    please enter a valid price!
+                  </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput4" class="form-label">Add Location</label>
+                <input type="text" class="form-control" id="exampleFormControlInput4" placeholder="like.. jaipur,ranchi ..etc" name="listing[location]" required >
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput5" class="form-label">Enter Countery</label>
+                <input type="text" class="form-control" id="exampleFormControlInput5" placeholder="India" name="listing[country]" required >
+              </div>
+              <div class="button">
+                <button class="btn btn-success" type="submit">submit</button>
+              </div>
+              </form>
+            </div>
+
+    
+    
+</body>
